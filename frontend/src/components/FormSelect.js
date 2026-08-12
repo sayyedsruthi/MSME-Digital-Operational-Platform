@@ -1,0 +1,23 @@
+// FormSelect.jsx
+export default function FormSelect({
+  label,
+  options = [],
+  ...props
+}) {
+  return (
+    <label className="form-field">
+      <span>{label}</span>
+
+      <select {...props}>
+        {options.map((option) => (
+          <option
+            key={option}
+            value={option}
+          >
+            {option}
+          </option>
+        ))}
+      </select>
+    </label>
+  );
+}

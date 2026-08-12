@@ -1,0 +1,61 @@
+.dashboard-card {
+  display: grid;
+  gap: 8px;
+  padding: 20px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--blue);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.dashboard-card.success {
+  border-top-color: var(--green);
+}
+
+.dashboard-card.warning {
+  border-top-color: var(--amber);
+}
+
+.dashboard-card span,
+.dashboard-card small,
+.activity span {
+  color: var(--muted);
+}
+
+.dashboard-card strong {
+  font-size: 30px;
+}
+
+.chart-card h3,
+.panel h3 {
+  margin: 0 0 16px;
+}
+
+.activity {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  margin: 0;
+}
+
+.workflow {
+  display: grid;
+  gap: 10px;
+}
+
+.workflow span {
+  background: #eef2f7;
+  border-radius: 8px;
+  font-weight: 800;
+  padding: 12px;
+}
+
+.report-tile {
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 900;
+  text-align: left;
+}
